@@ -122,7 +122,7 @@ def run():
     random.seed(int(time.time()))
     
     ts = []
-    for _ in range(4):
+    for _ in range(6):
         t = threading.Thread(target=simulate, args=(1000,))
         ts.append(t)
         t.start()
